@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  background-color: #73C2FA;
+}
+
+.formdiv {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.head {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0.5rem 1rem;
+  background-color: white;
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: inset .2rem .2rem .5rem #c8d0e7,
+    inset -.2rem -.2rem .5rem #b3dfff;
+}
+
+.box {
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: inset .2rem .2rem .5rem #c8d0e7,
+    inset -.2rem -.2rem .5rem #b3dfff;
+}
+.membox {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #525865;
+  border-radius: 4px;
+  border: 1px solid #d1d1d1;
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
+  line-height: 1.45;
+  outline: none;
+  padding: 0.6em 1.45em 0.7em;
+  -webkit-transition: .18s ease-out;
+  -moz-transition: .18s ease-out;
+  -o-transition: .18s ease-out;
+  transition: .18s ease-out;
+}
+
+.head1 {
+  font-size: 1.8rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.head2 {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+
+.head3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.input {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  background: #fff;
+  color: #525865;
+  border-radius: 4px;
+  border: 1px solid #d1d1d1;
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
+  font-family: inherit;
+  font-size: 1em;
+  line-height: 1.45;
+  outline: none;
+  padding: 0.6em 1.45em 0.7em;
+  -webkit-transition: .18s ease-out;
+  -moz-transition: .18s ease-out;
+  -o-transition: .18s ease-out;
+  transition: .18s ease-out;
+}
+
+.input:hover {
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.input:focus {
+  color: #4b515d;
+  border: 1px solid #B8B6B6;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+  background-color: #e3f3ff;
+}
+
+.event-box {
+  margin: 0.5rem 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+form {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+@media screen and (max-width:800px) {
+  form {
+    width: 90%;
+  }
+
+  .head {
+    font-size: 1.5rem;
+  }
+
+  .head1 {
+    font-size: 1.2rem;
+  }
+
+  .head2 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .input {
+    width: 60%;
+  }
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
