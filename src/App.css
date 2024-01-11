@@ -1,6 +1,10 @@
+* {
+  background-color: #73C2FA;
+}
+
 body {
   margin: 0;
-  background-color: #73C2FA;
+  overflow-x: hidden;
 }
 
 .formdiv {
@@ -30,6 +34,7 @@ body {
   box-shadow: inset .2rem .2rem .5rem #c8d0e7,
     inset -.2rem -.2rem .5rem #b3dfff;
 }
+
 .membox {
   margin: 1rem;
   padding: 0.5rem 1rem;
@@ -40,11 +45,6 @@ body {
   box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
   line-height: 1.45;
   outline: none;
-  padding: 0.6em 1.45em 0.7em;
-  -webkit-transition: .18s ease-out;
-  -moz-transition: .18s ease-out;
-  -o-transition: .18s ease-out;
-  transition: .18s ease-out;
 }
 
 .head1 {
@@ -68,6 +68,10 @@ body {
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+}
+
+.head4 {
+  color: black;
 }
 
 .input {
@@ -115,6 +119,76 @@ form {
   display: flex;
   flex-direction: column;
   width: 70%;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+button {
+  all: unset;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: 0.3s;
+  box-shadow: inset .2rem .2rem .5rem #c8d0e7,
+    inset -.2rem -.2rem .5rem #b3dfff;
+}
+
+button:hover {
+  background-color: #b3ffb3;
+  transition: 0.3s;
+}
+
+.Dropdown {
+  position: relative;
+  width: 90%;
+  margin: 1rem;
+}
+
+.dropdown-header {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-header.open {
+  border-bottom: none;
+}
+
+.custom-down-icon {
+  display: flex;
+  align-items: center;
+}
+
+.options {
+  /* position: absolute; */
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.option {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
 }
 
 @media screen and (max-width:800px) {
