@@ -132,7 +132,7 @@ button {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: transparent;
   transition: 0.3s;
   box-shadow: inset .2rem .2rem .5rem #c8d0e7,
     inset -.2rem -.2rem .5rem #b3dfff;
