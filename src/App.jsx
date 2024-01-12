@@ -598,9 +598,9 @@ const App = () => {
                           name="Intern"
                           onChange={handleLeadPriorWork}
                         />
-                        <div for="id4" className="checkbox-label">
+                        <label for="id4" className="checkbox-label">
                           Intern
-                        </div>
+                        </label>
                       </div>
                       <div className="checkbox">
                         <input
@@ -609,9 +609,9 @@ const App = () => {
                           name="Freelancer"
                           onChange={handleLeadPriorWork}
                         />
-                        <div for="id5" className="checkbox-label">
+                        <label for="id5" className="checkbox-label">
                           Freelancer
-                        </div>
+                        </label>
                       </div>
                       <div className="checkbox">
                         <input
@@ -620,9 +620,9 @@ const App = () => {
                           name="Founder/Co-founder"
                           onChange={handleLeadPriorWork}
                         />
-                        <div for="id7" className="checkbox-label">
+                        <label for="id7" className="checkbox-label">
                           Founder/Co-founder
-                        </div>
+                        </label>
                       </div>
                       <div className="checkbox">
                         <input
@@ -631,9 +631,9 @@ const App = () => {
                           name="Full-time"
                           onChange={handleLeadPriorWork}
                         />
-                        <div for="id7" className="checkbox-label">
+                        <label for="id7" className="checkbox-label">
                           Full-time
-                        </div>
+                        </label>
                       </div>
                       <div className="checkbox">
                         <input
@@ -642,9 +642,9 @@ const App = () => {
                           name="None"
                           onChange={handleLeadPriorWork}
                         />
-                        <div for="id8" className="checkbox-label">
+                        <label for="id8" className="checkbox-label">
                           None
-                        </div>
+                        </label>
                       </div>
                       <div className="head4">Currently working as</div>
                       <div className="checkbox">
@@ -654,9 +654,9 @@ const App = () => {
                           name="Full-time"
                           onChange={handleLeadCurrentWork}
                         />
-                        <div for="id9" className="checkbox-label">
+                        <label for="id9" className="checkbox-label">
                           Full-time
-                        </div>
+                        </label>
                       </div>
                       <div className="checkbox">
                         <input
@@ -665,9 +665,9 @@ const App = () => {
                           name="Part-time"
                           onChange={handleLeadCurrentWork}
                         />
-                        <div for="id10" className="checkbox-label">
+                        <label for="id10" className="checkbox-label">
                           Part-time
-                        </div>
+                        </label>
                       </div>
                       <div className="checkbox">
                         <input
@@ -676,9 +676,9 @@ const App = () => {
                           name="Freelance"
                           onChange={handleLeadCurrentWork}
                         />
-                        <div for="id11" className="checkbox-label">
+                        <label for="id11" className="checkbox-label">
                           Freelance
-                        </div>
+                        </label>
                       </div>
                       <div className="checkbox">
                         <input
@@ -687,9 +687,9 @@ const App = () => {
                           name="Intern"
                           onChange={handleLeadCurrentWork}
                         />
-                        <div for="id12" className="checkbox-label">
+                        <label for="id12" className="checkbox-label">
                           Intern
-                        </div>
+                        </label>
                       </div>
                       <div className="checkbox">
                         <input
@@ -698,9 +698,9 @@ const App = () => {
                           name="None"
                           onChange={handleLeadCurrentWork}
                         />
-                        <div for="id13" className="checkbox-label">
+                        <label for="id13" className="checkbox-label">
                           None
-                        </div>
+                        </label>
                       </div>
                       <div className="head4">Internship you're looking for</div>
                       <div className="checkbox">
@@ -710,9 +710,9 @@ const App = () => {
                           name="Web Development"
                           onChange={handleLeadCategory}
                         />
-                        <div for="id14" className="checkbox-label">
+                        <label for="id14" className="checkbox-label">
                           Web Development
-                        </div>
+                        </label>
                       </div>
                       <div className="checkbox">
                         <input
@@ -721,9 +721,9 @@ const App = () => {
                           name="App Development"
                           onChange={handleLeadCategory}
                         />
-                        <div for="id15" className="checkbox-label">
+                        <label for="id15" className="checkbox-label">
                           App Development
-                        </div>
+                        </label>
                       </div>
                       <div className="checkbox">
                         <input
@@ -732,9 +732,9 @@ const App = () => {
                           name="AI/ML"
                           onChange={handleLeadCategory}
                         />
-                        <div for="id16" className="checkbox-label">
+                        <label for="id16" className="checkbox-label">
                           AI/ML
-                        </div>
+                        </label>
                       </div>
                       <div className="checkbox">
                         <input
@@ -743,9 +743,9 @@ const App = () => {
                           name="Data Analyst"
                           onChange={handleLeadCategory}
                         />
-                        <div for="id17" className="checkbox-label">
+                        <label for="id17" className="checkbox-label">
                           Data Analyst
-                        </div>
+                        </label>
                       </div>
                       <div className="checkbox">
                         <input
@@ -754,9 +754,9 @@ const App = () => {
                           name="Graphic Designer"
                           onChange={handleLeadCategory}
                         />
-                        <div for="id18" className="checkbox-label">
+                        <label for="id18" className="checkbox-label">
                           Graphic Designer
-                        </div>
+                        </label>
                       </div>
                       <div className="checkbox">
                         <input
@@ -765,9 +765,9 @@ const App = () => {
                           name="Content Writer"
                           onChange={handleLeadCategory}
                         />
-                        <div for="id19" className="checkbox-label">
+                        <label for="id19" className="checkbox-label">
                           Content Writer
-                        </div>
+                        </label>
                       </div>
                       <div className="checkbox">
                         <input
@@ -776,9 +776,9 @@ const App = () => {
                           name="Business Analyst"
                           onChange={handleLeadCategory}
                         />
-                        <div for="id20" className="checkbox-label">
+                        <label for="id20" className="checkbox-label">
                           Business Analyst
-                        </div>
+                        </label>
                       </div>
                       <div className="checkbox">
                         <input
@@ -787,9 +787,9 @@ const App = () => {
                           name="Marketing"
                           onChange={handleLeadCategory}
                         />
-                        <div for="id21" className="checkbox-label">
+                        <label for="id21" className="checkbox-label">
                           Marketing
-                        </div>
+                        </label>
                       </div>
                       <div className="checkbox">
                         <input
@@ -798,9 +798,9 @@ const App = () => {
                           name="HR"
                           onChange={handleLeadCategory}
                         />
-                        <div for="id22" className="checkbox-label">
+                        <label for="id22" className="checkbox-label">
                           HR
-                        </div>
+                        </label>
                       </div>
                       <div className="checkbox">
                         <input
@@ -809,9 +809,9 @@ const App = () => {
                           name="Digital Marketing/Social Media manager"
                           onChange={handleLeadCategory}
                         />
-                        <div for="id23" className="checkbox-label">
+                        <label for="id23" className="checkbox-label">
                           Digital Marketing/Social Media manager
-                        </div>
+                        </label>
                       </div>
                     </>
                   )}
