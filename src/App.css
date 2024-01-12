@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
 
 body {
   margin: 0;
   overflow-x: hidden;
-  background-color: #73C2FA;
+  background-color: #a8dbff;
 }
 
 .formdiv {
@@ -70,38 +75,36 @@ body {
 
 .head4 {
   color: black;
+  margin-left: 1rem;
+  margin-top: 1rem;
 }
 
 .input {
   width: 80%;
   display: flex;
   justify-content: space-between;
-  margin: 1rem;
+  margin: 0.5rem 1rem;
   background: #fff;
   color: #525865;
   border-radius: 4px;
   border: 1px solid #d1d1d1;
-  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   font-family: inherit;
   font-size: 1em;
   line-height: 1.45;
   outline: none;
   padding: 0.6em 1.45em 0.7em;
-  -webkit-transition: .18s ease-out;
-  -moz-transition: .18s ease-out;
-  -o-transition: .18s ease-out;
-  transition: .18s ease-out;
-}
-
-.input:hover {
-  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: .3s ease-out;
+  -o-transition: .3s ease-out;
+  transition: .3s ease-out;
 }
 
 .input:focus {
   color: #4b515d;
   border: 1px solid #B8B6B6;
-  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
-  background-color: #e3f3ff;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  transition: 0.3s;
 }
 
 .event-box {
@@ -157,6 +160,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  line-height: 1.45;
 }
 
 .dropdown-header.open {
@@ -172,9 +176,8 @@ button:hover {
   /* position: absolute; */
   top: 100%;
   left: 0;
-  width: 100%;
   background-color: #fff;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-top: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -187,6 +190,15 @@ button:hover {
 
 .option:hover {
   background-color: #f0f0f0;
+}
+
+.checkbox {
+  margin: 0.5rem 1rem;
+  display: flex;
+}
+
+.checkbox-label {
+  margin-left: 0.5rem;
 }
 
 @media screen and (max-width:800px) {
