@@ -231,11 +231,11 @@ button:hover {
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+/* .topnav a:hover {
   background-color: #73C2FA;
   border-radius: 10px;
   color: black;
-}
+} */
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
