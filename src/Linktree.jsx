@@ -7,9 +7,7 @@ const Linktree = () => {
   return (
     <div>
       <div className="box">
-        <div className="head1">
-          About Winternship: 
-        </div>
+        <div className="head1">About Winternship:</div>
         <div className="tag">Northeast India's Premier Internship Fair! </div>
         <div className="dp-block">
           <div className="dp">
@@ -22,17 +20,28 @@ const Linktree = () => {
           </div>
         </div>
         <div className="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias cum
-          aspernatur sequi id magnam temporibus rem commodi molestiae ut,
-          nostrum illum pariatur quae, cumque odio reiciendis nobis nulla
-          dolores, excepturi eius fugit dicta. Perspiciatis culpa provident
-          laboriosam rem ipsam quis, ut sed quia vero quisquam nihil! Rem atque
-          debitis dignissimos? Adipisci deserunt dicta facere? Odit iste,
-          molestiae, aperiam, nesciunt ipsa blanditiis veritatis ullam
-          consequatur saepe sequi iure in modi a optio at. Quo aspernatur minus
-          provident corrupti harum, sequi itaque natus nesciunt quae veniam eos
-          nobis quia perspiciatis rerum molestias illum maiores eligendi qui
-          est! Maiores quis omnis voluptatum libero.
+          Winternship stands as the region's first internship fair, a unique and
+          exclusive opportunity you cannot miss.
+          <br />
+          <br />
+          <div className="dp-span"> Why Attend?</div>
+          <br />
+          <b> - For Startups:</b> Discover diverse talent, optimize your
+          workforce, and contribute to a flourishing startup culture.
+          <br />
+          <b>- For Students:</b> Unlock exceptional internship opportunities,
+          learn from industry leaders, and propel your professional journey.
+          <br />
+          <br />
+          Demonstrate your skills, network with industry professionals and get
+          hired!
+          <br />
+          Winternship is more than an event; it's a movement. Participate in
+          shaping the future, fostering innovation, and cultivating a robust
+          startup culture in Northeast India.
+          <br />
+          Register for Winternship and start your journey to success! Stay tuned
+          for updates!
         </div>
       </div>
       <Link to="/event">

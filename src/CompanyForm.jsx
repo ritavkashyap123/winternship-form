@@ -2,7 +2,9 @@ import React from 'react'
 
 const CompanyForm = () => {
   return (
-    <div>CompanyForm</div>
+    <div className="box">
+    <div className="head">Coming Soon...</div>
+  </div>
   )
 }
 
