@@ -52,52 +52,66 @@ const Events = () => {
               )}
             </div>
             {!timeline && (
-              <>
-                <div className="head2">
-                  15th Jan 2024 <br />
-                  Announcement and registration for Winternship
-                </div>
-                <div className="head2">
-                  16th Jan 2024 <br />
-                  1st phase of screening
-                </div>
-                <div className="head2">
-                  23rd Jan 2024 <br />
-                  Closing date for submission of solutions for the 1st phase of
-                  screening
-                </div>
-                <div className="head2">
-                  27th Jan 2024 <br />
-                  Announcement of result for 1st round of screening.
-                </div>
-                <div className="head2">
-                  2nd Feb 2024 <br />
-                  9:30 am- 10:00 am- Felicitation Programme for Dignitaries{" "}
-                  <br />
-                  10:00 am- 10:45 am – Speech by Dignitaries <br />
-                  10:45 am- 11:00 am - Tea Break <br />
-                  11:00 am- 12:00 pm – Speech by Dignitaries (continues) <br />
-                  12:15 pm- 1:15 pm - Lunch Break <br />
-                  1:30 pm- 5:30 pm- Competitions for Marketing, Sales, Web
-                  Development and Designing <br />{" "}
-                </div>
-                <div className="head2">
-                  23rd Feb 2024
-                  <br />
-                  9:30 am- 10:15 am - Prize Distribution <br />
-                  10:15 am- 10:30 am- Tea Break <br />
-                  10:30 am- 12:00 pm- Panel Discussion <br />
-                  12:15 pm- 1:15 pm Lunch Break <br />
-                  1:30 pm-2:30 pm- Networking events <br />
-                  2:30 pm- 6:30 pm- Interviews{" "}
-                </div>
+              <ul>
+                <li>
+                  <div className="head2">
+                    <b>15th Jan 2024 </b>
+                    <br />
+                    Announcement and registration for Winternship
+                  </div>
+                </li>
+                <li>
+                  <div className="head2">
+                    <b>16th Jan 2024</b> <br />
+                    1st phase of screening
+                  </div>
+                </li>
+                <li>
+                  <div className="head2">
+                    <b>23rd Jan 2024</b> <br />
+                    Closing date for submission of solutions for the 1st phase
+                    of screening
+                  </div>
+                </li>
+                <li>
+                  <div className="head2">
+                    <b>27th Jan 2024</b> <br />
+                    Announcement of result for 1st round of screening.
+                  </div>
+                </li>
+                <li>
+                  <div className="head2">
+                    <b>2nd Feb 2024</b> <br />
+                    9:30 am- 10:00 am- Felicitation Programme for Dignitaries{" "}
+                    <br />
+                    10:00 am- 10:45 am – Speech by Dignitaries <br />
+                    10:45 am- 11:00 am - Tea Break <br />
+                    11:00 am- 12:00 pm – Speech by Dignitaries (continues){" "}
+                    <br />
+                    12:15 pm- 1:15 pm - Lunch Break <br />
+                    1:30 pm- 5:30 pm- Competitions for Marketing, Sales, Web
+                    Development and Designing <br />{" "}
+                  </div>
+                </li>
+                <li>
+                  <div className="head2">
+                    <b>23rd Feb 2024</b>
+                    <br />
+                    9:30 am- 10:15 am - Prize Distribution <br />
+                    10:15 am- 10:30 am- Tea Break <br />
+                    10:30 am- 12:00 pm- Panel Discussion <br />
+                    12:15 pm- 1:15 pm Lunch Break <br />
+                    1:30 pm-2:30 pm- Networking events <br />
+                    2:30 pm- 6:30 pm- Interviews{" "}
+                  </div>
+                </li>
                 <div className="head1"></div>
-              </>
+              </ul>
             )}
           </div>
           <div className="box">
             <div className="head1" onClick={toggleMarketing}>
-              Marketing Event Details
+              Bech ke Dikhao
               {marketing ? (
                 <FaChevronDown fontSize={"1.5rem"} />
               ) : (
@@ -114,7 +128,7 @@ const Events = () => {
           <div className="box">
             <div className="head1" onClick={toggleHackathon}>
               {" "}
-              Hackathon Details
+              Cipher Sprint
               {hackathon ? (
                 <FaChevronDown fontSize={"1.5rem"} />
               ) : (
@@ -131,7 +145,7 @@ const Events = () => {
           <div className="box">
             <div className="head1" onClick={toggleSales}>
               {" "}
-              Sales Event Details
+              Design Event Details
               {sales ? (
                 <FaChevronDown fontSize={"1.5rem"} />
               ) : (

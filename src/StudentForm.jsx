@@ -88,10 +88,9 @@ const Form = () => {
   };
 
   const options = [
-    "Wash and Fold",
-    "Ironing",
-    "Premium Laundry",
-    "Dry Cleaning",
+    "Bech ke Dikhao",
+    "Cipher Sprint",
+    "Design Event",
   ];
   const options1 = [
     "Higher Secondary",
@@ -391,7 +390,7 @@ const Form = () => {
                   className={`dropdown-header ${dropdownOpen ? "open" : ""}`}
                   onClick={() => setDropdownOpen(!dropdownOpen)}
                 >
-                  {eventName ? eventName : "Select an Event"}
+                  {eventName ? eventName : "Select the Event"}
                   <div className="custom-down-icon">
                     <FaChevronDown />
                   </div>

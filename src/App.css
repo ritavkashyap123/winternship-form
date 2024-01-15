@@ -49,7 +49,7 @@ body {
 .head2 {
   margin-top: 1rem;
   font-size: 1.2rem;
-  padding-left: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .head3 {
@@ -293,7 +293,7 @@ button:hover {
 
 @media screen and (max-width:500px) {
   .input {
-    width: 60%;
+    width: 70%;
   }
 }
 
