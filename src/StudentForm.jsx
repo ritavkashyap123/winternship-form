@@ -90,7 +90,12 @@ const Form = () => {
     setFourthMember(!fourthMember);
   };
 
-  const options = ["Bech ke Dikhao", "Cipher Sprint", "Design Event", "Marketing Event"];
+  const options = [
+    "Bech ke Dikhao",
+    "Cipher Sprint",
+    "Design Event",
+    "Marketing Event",
+  ];
   const options1 = [
     "Higher Secondary",
     "1st Year",
@@ -299,7 +304,7 @@ const Form = () => {
       alert("Registration Successful 👍");
       // const form = e.target;
       // form.reset();
-      navigate("/links")
+      navigate("/links");
     } catch (e) {
       // console.error("Error adding document: ", e);
       alert("Registration failed error: ", e);
@@ -371,6 +376,11 @@ const Form = () => {
             ) : (
               <FaChevronUp fontSize={"1.5rem"} />
             )}
+          </div>
+          <div className="head2">
+            Team for the Tech event must be consist of 1 - 3 members <br />
+            In other events ie. Marketing, Sales and Design event, each team
+            must consist of solo participant
           </div>
           {!teamDetails && (
             <>
@@ -1610,7 +1620,7 @@ const Form = () => {
                   </>
                 )}
               </div>
-              <div className="membox">
+              {/* <div className="membox">
                 <div className="head3" onClick={toggleFourth}>
                   Fourth Member{" "}
                   {fourthMember ? (
@@ -1995,7 +2005,7 @@ const Form = () => {
                     </div>
                   </>
                 )}
-              </div>
+              </div> */}
               <div className="btn">
                 <button type="submit">Submit</button>
               </div>
