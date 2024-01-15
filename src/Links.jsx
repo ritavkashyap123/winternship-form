@@ -16,9 +16,10 @@ const Links = () => {
             <br />
             <Link
               to="https://chat.whatsapp.com/FiqGTYOiP6E6l2YvTgMPqu"
+              target="_blank"
               className="link"
             >
-              Link
+              https://chat.whatsapp.com/FiqGTYOiP6E6l2YvTgMPqu
             </Link>
           </div>
         </li>
@@ -28,9 +29,10 @@ const Links = () => {
             <br />
             <Link
               to="https://chat.whatsapp.com/GujIjKuReBa3lftcKavdnY"
+              target="_blank"
               className="link"
             >
-              Link
+              https://chat.whatsapp.com/GujIjKuReBa3lftcKavdnY
             </Link>
           </div>
         </li>
@@ -40,9 +42,10 @@ const Links = () => {
             <br />
             <Link
               to="https://chat.whatsapp.com/GI7bbHKXJrxCFu5EF8PY2V"
+              target="_blank"
               className="link"
             >
-              Link
+              https://chat.whatsapp.com/GI7bbHKXJrxCFu5EF8PY2V
             </Link>
           </div>
         </li>
@@ -52,9 +55,10 @@ const Links = () => {
             <br />
             <Link
               to="https://chat.whatsapp.com/EF54ldCCyI5Ggkwut6QRtb"
+              target="_blank"
               className="link"
             >
-              Link
+              https://chat.whatsapp.com/EF54ldCCyI5Ggkwut6QRtb
             </Link>
           </div>
         </li>
