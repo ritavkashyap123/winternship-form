@@ -127,7 +127,7 @@ const Events = () => {
                 <div className="head2">
                   It will be in 2 phases <br />
                   <b>Phase 1:</b> will be 9 days starting from Jan 17th to Jan
-                  25th. The result will be announced on Jan 27th. The top 15
+                  25th. The result will be announced on Jan 29th. The top 15
                   individuals will be selected.
                   <br />
                   <b>Phase 2:</b> will be on Feb 2nd when the screening/pitching
@@ -155,7 +155,7 @@ const Events = () => {
                 <div className="head2">
                   It will be in 2 phases <br />
                   <b>Phase 1:</b> will be 9 days starting from Jan 17th to Jan
-                  25th. The result will be announced on Jan 27th. The top 15
+                  25th. The result will be announced on Jan 29th. The top 15
                   individuals will be selected.
                   <br />
                   <b>Phase 2:</b> will be on Feb 3rd when the screening/pitching
@@ -183,7 +183,7 @@ const Events = () => {
                 <div className="head2">
                   It will be in 2 phases <br />
                   <b>Phase 1:</b> will be 9 days starting from Jan 17th to Jan
-                  25th. The result will be announced on Jan 27th. The top 15
+                  25th. The result will be announced on Jan 29th. The top 15
                   individuals will be selected.
                   <br />
                   <b>Phase 2:</b> will be on Feb 2nd when the screening/pitching
@@ -211,7 +211,7 @@ const Events = () => {
                 <div className="head2">
                   It will be in 2 phases <br />
                   <b>Phase 1:</b> will be 9 days starting from Jan 17th to Jan
-                  25th. The result will be announced on Jan 27th. The top 15
+                  25th. The result will be announced on Jan 29th. The top 15
                   individuals will be selected.
                   <br />
                   <b>Phase 2:</b> will be on Feb 2nd when the screening/pitching
