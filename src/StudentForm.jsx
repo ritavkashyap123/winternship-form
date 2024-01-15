@@ -296,9 +296,11 @@ const Form = () => {
         mem4CurrentWork: Object.keys(mem4CurrentWork),
         mem4Category: Object.keys(mem4Category),
       });
-      console.log("Document written with ID: ", docRef.id);
+      // console.log("Document written with ID: ", docRef.id);
+      alert("Registration Successful ");
     } catch (e) {
-      console.error("Error adding document: ", e);
+      // console.error("Error adding document: ", e);
+      alert("Registration failed error: ", e);
     }
     setTeamName("");
     setEventName("");

@@ -119,10 +119,21 @@ const Events = () => {
               )}
             </div>
             {!marketing && (
-              <Link className="input" to="/">
-                Coming Soon...
-                <BsBoxArrowUpRight />
-              </Link>
+              <>
+                <div className="head2">
+                  It will be in 2 phases <br />
+                  <b>Phase 1:</b> will be 9 days starting from Jan 17th to Jan
+                  25th. The result will be announced on Jan 27th. The top 15
+                  individuals will be selected.
+                  <br />
+                  <b>Phase 2:</b> will be on Feb 2nd when the screening/pitching
+                  of the qualified individuals will be done.
+                </div>
+                <Link className="input" to="/">
+                  Rulebook will be released Soon...
+                  <BsBoxArrowUpRight />
+                </Link>
+              </>
             )}
           </div>
           <div className="box">
@@ -136,10 +147,21 @@ const Events = () => {
               )}
             </div>
             {!hackathon && (
-              <Link className="input" to="/">
-                Coming Soon...
-                <BsBoxArrowUpRight />
-              </Link>
+              <>
+                <div className="head2">
+                  It will be in 2 phases <br />
+                  <b>Phase 1:</b> will be 9 days starting from Jan 17th to Jan
+                  25th. The result will be announced on Jan 27th. The top 15
+                  individuals will be selected.
+                  <br />
+                  <b>Phase 2:</b> will be on Feb 3rd when the screening/pitching
+                  of the qualified individuals will be done.
+                </div>
+                <Link className="input" to="/">
+                  Rulebook will be released Soon...
+                  <BsBoxArrowUpRight />
+                </Link>
+              </>
             )}
           </div>
           <div className="box">
@@ -153,10 +175,21 @@ const Events = () => {
               )}
             </div>
             {!sales && (
-              <Link className="input" to="/">
-                Coming Soon...
-                <BsBoxArrowUpRight />
-              </Link>
+              <>
+                <div className="head2">
+                  It will be in 2 phases <br />
+                  <b>Phase 1:</b> will be 9 days starting from Jan 17th to Jan
+                  25th. The result will be announced on Jan 27th. The top 15
+                  individuals will be selected.
+                  <br />
+                  <b>Phase 2:</b> will be on Feb 2nd when the screening/pitching
+                  of the qualified individuals will be done.
+                </div>
+                <Link className="input" to="/">
+                  Rulebook will be released Soon...
+                  <BsBoxArrowUpRight />
+                </Link>
+              </>
             )}
           </div>
         </>
