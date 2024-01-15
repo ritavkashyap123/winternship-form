@@ -91,8 +91,8 @@ const Form = () => {
   };
 
   const options = [
-    "Bech ke Dikhao",
-    "Cipher Sprint",
+    "Sales Event",
+    "Tech Event",
     "Design Event",
     "Marketing Event",
   ];
