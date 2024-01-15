@@ -297,7 +297,7 @@ const Form = () => {
         mem4Category: Object.keys(mem4Category),
       });
       // console.log("Document written with ID: ", docRef.id);
-      alert("Registration Successful ");
+      alert("Registration Successful 👍");
     } catch (e) {
       // console.error("Error adding document: ", e);
       alert("Registration failed error: ", e);
