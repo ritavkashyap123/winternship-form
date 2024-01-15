@@ -9,6 +9,7 @@ const Events = () => {
   const [marketing, setMarketing] = useState(true);
   const [hackathon, setHackathon] = useState(true);
   const [sales, setSales] = useState(true);
+  const [design, setDesign] = useState(true);
 
   const toggleEvent = () => {
     setEventDetails(!eventDetails);
@@ -25,6 +26,9 @@ const Events = () => {
   };
   const toggleSales = () => {
     setSales(!sales);
+  };
+  const toggleDesign = () => {
+    setDesign(!design);
   };
 
   return (
@@ -111,7 +115,7 @@ const Events = () => {
           </div>
           <div className="box">
             <div className="head1" onClick={toggleMarketing}>
-              Bech ke Dikhao
+              Marketing Event
               {marketing ? (
                 <FaChevronDown fontSize={"1.5rem"} />
               ) : (
@@ -167,7 +171,7 @@ const Events = () => {
           <div className="box">
             <div className="head1" onClick={toggleSales}>
               {" "}
-              Design Event Details
+              Bech ke Dikhao
               {sales ? (
                 <FaChevronDown fontSize={"1.5rem"} />
               ) : (
@@ -175,6 +179,34 @@ const Events = () => {
               )}
             </div>
             {!sales && (
+              <>
+                <div className="head2">
+                  It will be in 2 phases <br />
+                  <b>Phase 1:</b> will be 9 days starting from Jan 17th to Jan
+                  25th. The result will be announced on Jan 27th. The top 15
+                  individuals will be selected.
+                  <br />
+                  <b>Phase 2:</b> will be on Feb 2nd when the screening/pitching
+                  of the qualified individuals will be done.
+                </div>
+                <Link className="input" to="/">
+                  Rulebook will be released Soon...
+                  <BsBoxArrowUpRight />
+                </Link>
+              </>
+            )}
+          </div>
+          <div className="box">
+            <div className="head1" onClick={toggleDesign}>
+              {" "}
+              Design Event Details
+              {design ? (
+                <FaChevronDown fontSize={"1.5rem"} />
+              ) : (
+                <FaChevronUp fontSize={"1.5rem"} />
+              )}
+            </div>
+            {!design && (
               <>
                 <div className="head2">
                   It will be in 2 phases <br />

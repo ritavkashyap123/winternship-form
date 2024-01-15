@@ -90,7 +90,7 @@ const Form = () => {
     setFourthMember(!fourthMember);
   };
 
-  const options = ["Bech ke Dikhao", "Cipher Sprint", "Design Event"];
+  const options = ["Bech ke Dikhao", "Cipher Sprint", "Design Event", "Marketing Event"];
   const options1 = [
     "Higher Secondary",
     "1st Year",

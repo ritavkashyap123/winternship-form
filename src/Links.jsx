@@ -12,23 +12,50 @@ const Links = () => {
       <ul>
         <li>
           <div className="head2">
-            <b>Bech ke Dikhao Group </b>
+            <b>Marketing Community </b>
             <br />
-            <Link to="/" className="link">Link</Link>
+            <Link
+              to="https://chat.whatsapp.com/FiqGTYOiP6E6l2YvTgMPqu"
+              className="link"
+            >
+              Link
+            </Link>
           </div>
         </li>
         <li>
           <div className="head2">
-            <b>Cipher Sprint Group</b>
+            <b>Tech Community</b>
             <br />
-            <Link to="/" className="link">Link</Link>
+            <Link
+              to="https://chat.whatsapp.com/GujIjKuReBa3lftcKavdnY"
+              className="link"
+            >
+              Link
+            </Link>
           </div>
         </li>
         <li>
           <div className="head2">
-            <b>Sales Event Group </b>
+            <b>Design Community </b>
             <br />
-            <Link to="/" className="link">Link</Link>
+            <Link
+              to="https://chat.whatsapp.com/GI7bbHKXJrxCFu5EF8PY2V"
+              className="link"
+            >
+              Link
+            </Link>
+          </div>
+        </li>
+        <li>
+          <div className="head2">
+            <b>Sales Community </b>
+            <br />
+            <Link
+              to="https://chat.whatsapp.com/EF54ldCCyI5Ggkwut6QRtb"
+              className="link"
+            >
+              Link
+            </Link>
           </div>
         </li>
       </ul>
