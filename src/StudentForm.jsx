@@ -11,7 +11,7 @@ const Form = () => {
   const [teamLeader, setTeamLeader] = useState(false);
   const [secondMember, setSecondMember] = useState(true);
   const [thirdMember, setThirdMember] = useState(true);
-  const [fourthMember, setFourthMember] = useState(true);
+  // const [fourthMember, setFourthMember] = useState(true);
 
   const [teamName, setTeamName] = useState("");
   const [eventName, setEventName] = useState("");
@@ -55,24 +55,24 @@ const Form = () => {
   const [mem3CurrentWork, setMem3CurrentWork] = useState("");
   const [mem3Category, setMem3Category] = useState("");
 
-  const [mem4Name, setMem4Name] = useState("");
-  const [mem4Mail, setMem4Mail] = useState("");
-  const [mem4Number, setMem4Number] = useState("");
-  const [mem4Age, setMem4Age] = useState("");
-  const [mem4Location, setMem4Location] = useState("");
-  const [mem4Institute, setMem4Institute] = useState("");
-  const [mem4Course, setMem4Course] = useState("");
-  const [mem4CurrentYear, setMem4CurrentYear] = useState("");
-  const [mem4Interest, setMem4Interest] = useState("");
-  const [mem4PriorWork, setMem4PriorWork] = useState("");
-  const [mem4CurrentWork, setMem4CurrentWork] = useState("");
-  const [mem4Category, setMem4Category] = useState("");
+  // const [mem4Name, setMem4Name] = useState("");
+  // const [mem4Mail, setMem4Mail] = useState("");
+  // const [mem4Number, setMem4Number] = useState("");
+  // const [mem4Age, setMem4Age] = useState("");
+  // const [mem4Location, setMem4Location] = useState("");
+  // const [mem4Institute, setMem4Institute] = useState("");
+  // const [mem4Course, setMem4Course] = useState("");
+  // const [mem4CurrentYear, setMem4CurrentYear] = useState("");
+  // const [mem4Interest, setMem4Interest] = useState("");
+  // const [mem4PriorWork, setMem4PriorWork] = useState("");
+  // const [mem4CurrentWork, setMem4CurrentWork] = useState("");
+  // const [mem4Category, setMem4Category] = useState("");
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [dropdownOpen1, setDropdownOpen1] = useState(false);
   const [dropdownOpen2, setDropdownOpen2] = useState(false);
   const [dropdownOpen3, setDropdownOpen3] = useState(false);
-  const [dropdownOpen4, setDropdownOpen4] = useState(false);
+  // const [dropdownOpen4, setDropdownOpen4] = useState(false);
 
   const toggleTeam = () => {
     setTeamDetails(!teamDetails);
@@ -122,10 +122,10 @@ const Form = () => {
     setMem3CurrentYear(option);
     setDropdownOpen3(false);
   };
-  const handleOptionClick4 = (option) => {
-    setMem4CurrentYear(option);
-    setDropdownOpen4(false);
-  };
+  // const handleOptionClick4 = (option) => {
+  //   setMem4CurrentYear(option);
+  //   setDropdownOpen4(false);
+  // };
 
   const handleLeadInterest = (event) => {
     const { name, checked } = event.target;
@@ -214,34 +214,34 @@ const Form = () => {
     }));
   };
 
-  const handleMem4Interest = (event) => {
-    const { name, checked } = event.target;
-    setMem4Interest((prevCheckedItems) => ({
-      ...prevCheckedItems,
-      [name]: checked,
-    }));
-  };
-  const handleMem4PriorWork = (event) => {
-    const { name, checked } = event.target;
-    setMem4PriorWork((prevCheckedItems) => ({
-      ...prevCheckedItems,
-      [name]: checked,
-    }));
-  };
-  const handleMem4CurrentWork = (event) => {
-    const { name, checked } = event.target;
-    setMem4CurrentWork((prevCheckedItems) => ({
-      ...prevCheckedItems,
-      [name]: checked,
-    }));
-  };
-  const handleMem4Category = (event) => {
-    const { name, checked } = event.target;
-    setMem4Category((prevCheckedItems) => ({
-      ...prevCheckedItems,
-      [name]: checked,
-    }));
-  };
+  // const handleMem4Interest = (event) => {
+  //   const { name, checked } = event.target;
+  //   setMem4Interest((prevCheckedItems) => ({
+  //     ...prevCheckedItems,
+  //     [name]: checked,
+  //   }));
+  // };
+  // const handleMem4PriorWork = (event) => {
+  //   const { name, checked } = event.target;
+  //   setMem4PriorWork((prevCheckedItems) => ({
+  //     ...prevCheckedItems,
+  //     [name]: checked,
+  //   }));
+  // };
+  // const handleMem4CurrentWork = (event) => {
+  //   const { name, checked } = event.target;
+  //   setMem4CurrentWork((prevCheckedItems) => ({
+  //     ...prevCheckedItems,
+  //     [name]: checked,
+  //   }));
+  // };
+  // const handleMem4Category = (event) => {
+  //   const { name, checked } = event.target;
+  //   setMem4Category((prevCheckedItems) => ({
+  //     ...prevCheckedItems,
+  //     [name]: checked,
+  //   }));
+  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -287,18 +287,18 @@ const Form = () => {
         mem3PriorWork: Object.keys(mem3PriorWork),
         mem3CurrentWork: Object.keys(mem3CurrentWork),
         mem3Category: Object.keys(mem3Category),
-        mem4Name: mem4Name,
-        mem4Mail: mem4Mail,
-        mem4Number: mem4Number,
-        mem4Age: mem4Age,
-        mem4Location: mem4Location,
-        mem4Institute: mem4Institute,
-        mem4Course: mem4Course,
-        mem4CurrentYear: mem4CurrentYear,
-        mem4Interest: Object.keys(mem4Interest),
-        mem4PriorWork: Object.keys(mem4PriorWork),
-        mem4CurrentWork: Object.keys(mem4CurrentWork),
-        mem4Category: Object.keys(mem4Category),
+        // mem4Name: mem4Name,
+        // mem4Mail: mem4Mail,
+        // mem4Number: mem4Number,
+        // mem4Age: mem4Age,
+        // mem4Location: mem4Location,
+        // mem4Institute: mem4Institute,
+        // mem4Course: mem4Course,
+        // mem4CurrentYear: mem4CurrentYear,
+        // mem4Interest: Object.keys(mem4Interest),
+        // mem4PriorWork: Object.keys(mem4PriorWork),
+        // mem4CurrentWork: Object.keys(mem4CurrentWork),
+        // mem4Category: Object.keys(mem4Category),
       });
       // console.log("Document written with ID: ", docRef.id);
       alert("Registration Successful 👍");
@@ -347,18 +347,18 @@ const Form = () => {
     setMem3PriorWork("");
     setMem3CurrentWork("");
     setMem3Category("");
-    setMem4Name("");
-    setMem4Mail("");
-    setMem4Number("");
-    setMem4Age("");
-    setMem4Location("");
-    setMem4Institute("");
-    setMem4Course("");
-    setMem4CurrentYear("");
-    setMem4Interest("");
-    setMem4PriorWork("");
-    setMem4CurrentWork("");
-    setMem4Category("");
+    // setMem4Name("");
+    // setMem4Mail("");
+    // setMem4Number("");
+    // setMem4Age("");
+    // setMem4Location("");
+    // setMem4Institute("");
+    // setMem4Course("");
+    // setMem4CurrentYear("");
+    // setMem4Interest("");
+    // setMem4PriorWork("");
+    // setMem4CurrentWork("");
+    // setMem4Category("");
   };
 
   return (
@@ -377,13 +377,13 @@ const Form = () => {
               <FaChevronUp fontSize={"1.5rem"} />
             )}
           </div>
-          <div className="head2">
-            Team for the Tech event must be consist of 1 - 3 members <br />
-            In other events ie. Marketing, Sales and Design event, each team
-            must consist of solo participant
-          </div>
           {!teamDetails && (
             <>
+              <div className="head2">
+                Team for the Tech event must be consist of 1 - 3 members <br />
+                In other events ie. Marketing, Sales and Design event, each team
+                must consist of solo participant
+              </div>
               <div className="head2">
                 Team Name <span className="required">*</span>
               </div>
