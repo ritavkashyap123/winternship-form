@@ -115,7 +115,7 @@ const Events = () => {
           </div>
           <div className="box">
             <div className="head1" onClick={toggleMarketing}>
-              Marketing Event
+              Marketing Event Details 
               {marketing ? (
                 <FaChevronDown fontSize={"1.5rem"} />
               ) : (
@@ -143,7 +143,7 @@ const Events = () => {
           <div className="box">
             <div className="head1" onClick={toggleHackathon}>
               {" "}
-              Cipher Sprint
+              Tech Event Details 
               {hackathon ? (
                 <FaChevronDown fontSize={"1.5rem"} />
               ) : (
@@ -171,7 +171,7 @@ const Events = () => {
           <div className="box">
             <div className="head1" onClick={toggleSales}>
               {" "}
-              Bech ke Dikhao
+             Sales Event Details 
               {sales ? (
                 <FaChevronDown fontSize={"1.5rem"} />
               ) : (
