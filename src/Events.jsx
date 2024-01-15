@@ -158,7 +158,7 @@ const Events = () => {
                   25th. The result will be announced on Jan 29th. The top 15
                   individuals will be selected.
                   <br />
-                  <b>Phase 2:</b> will be on Feb 3rd when the screening/pitching
+                  <b>Phase 2:</b> will be on Feb 2nd when the screening/pitching
                   of the qualified individuals will be done.
                 </div>
                 <Link className="input" to="/">
