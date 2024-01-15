@@ -99,7 +99,7 @@ const Events = () => {
                 </li>
                 <li>
                   <div className="head2">
-                    <b>23rd Feb 2024</b>
+                    <b>3rd Feb 2024</b>
                     <br />
                     9:30 am- 10:15 am - Prize Distribution <br />
                     10:15 am- 10:30 am- Tea Break <br />

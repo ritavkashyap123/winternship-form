@@ -12,7 +12,7 @@ const Linktree = () => {
         <div className="dp-block">
           <div className="dp">
             <FaCalendarAlt className="dp-icon" />
-            <span className="dp-span">Date: </span> 2nd - 3rd February, 2023{" "}
+            <span className="dp-span">Date: </span> 2nd - 3rd February, 2024{" "}
           </div>
           <div className="dp">
             <FaMapPin className="dp-icon1" />
