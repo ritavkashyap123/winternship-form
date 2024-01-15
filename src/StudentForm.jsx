@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { db } from "./firebaseUtils";
 import { collection, addDoc } from "firebase/firestore";
+import { useNavigate } from "react-router-dom";
 
 const Form = () => {
+  const navigate = useNavigate();
+
   const [teamDetails, setTeamDetails] = useState(false);
   const [teamLeader, setTeamLeader] = useState(false);
   const [secondMember, setSecondMember] = useState(true);
@@ -294,8 +297,9 @@ const Form = () => {
       });
       // console.log("Document written with ID: ", docRef.id);
       alert("Registration Successful 👍");
-      const form = e.target;
-      form.reset();
+      // const form = e.target;
+      // form.reset();
+      navigate("/links")
     } catch (e) {
       // console.error("Error adding document: ", e);
       alert("Registration failed error: ", e);

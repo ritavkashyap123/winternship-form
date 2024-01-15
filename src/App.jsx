@@ -7,6 +7,7 @@ import CompanyForm from "./CompanyForm";
 import Navbar from "./Navbar";
 import "./App.css";
 import Header from "./Header";
+import Links from "./Links";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/event" element={<Events />} />
         <Route path="/student-form" element={<StudentForm />} />
         <Route path="/company-form" element={<CompanyForm />} />
+        <Route path="/links" element={<Links />} />
       </Routes>
     </BrowserRouter>
   );

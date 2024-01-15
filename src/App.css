@@ -259,6 +259,10 @@ button:hover {
   display: none;
 }
 
+.link {
+  color: #0463FC;
+}
+
 
 @media screen and (max-width:800px) {
   form {
