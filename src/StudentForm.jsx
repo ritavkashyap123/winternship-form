@@ -87,11 +87,7 @@ const Form = () => {
     setFourthMember(!fourthMember);
   };
 
-  const options = [
-    "Bech ke Dikhao",
-    "Cipher Sprint",
-    "Design Event",
-  ];
+  const options = ["Bech ke Dikhao", "Cipher Sprint", "Design Event"];
   const options1 = [
     "Higher Secondary",
     "1st Year",
@@ -298,6 +294,8 @@ const Form = () => {
       });
       // console.log("Document written with ID: ", docRef.id);
       alert("Registration Successful 👍");
+      const form = e.target;
+      form.reset();
     } catch (e) {
       // console.error("Error adding document: ", e);
       alert("Registration failed error: ", e);
