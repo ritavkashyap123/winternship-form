@@ -66,20 +66,20 @@ const Events = () => {
                 </li>
                 <li>
                   <div className="head2">
-                    <b>16th Jan 2024</b> <br />
+                    <b>17th Jan 2024</b> <br />
                     1st phase of screening
                   </div>
                 </li>
                 <li>
                   <div className="head2">
-                    <b>23rd Jan 2024</b> <br />
+                    <b>25th Jan 2024</b> <br />
                     Closing date for submission of solutions for the 1st phase
                     of screening
                   </div>
                 </li>
                 <li>
                   <div className="head2">
-                    <b>27th Jan 2024</b> <br />
+                    <b>29th Jan 2024</b> <br />
                     Announcement of result for 1st round of screening.
                   </div>
                 </li>
