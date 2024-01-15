@@ -848,778 +848,792 @@ const Form = () => {
                   </>
                 )}
               </div>
-              <div className="membox">
-                <div className="head3" onClick={toggleSecond}>
-                  Second Member{" "}
-                  {secondMember ? (
-                    <FaChevronDown fontSize={"1.5rem"} />
-                  ) : (
-                    <FaChevronUp fontSize={"1.5rem"} />
-                  )}
-                </div>
-                {!secondMember && (
-                  <>
-                    <div className="head4">Name</div>
-                    <input
-                      type="text"
-                      className="input"
-                      placeholder="Name"
-                      id="member2-name"
-                      value={mem2Name}
-                      onChange={(e) => setMem2Name(e.target.value)}
-                    />
-                    <div className="head4">Email</div>
-                    <input
-                      id="member2-mail"
-                      type="email"
-                      className="input"
-                      placeholder="Email"
-                      value={mem2Mail}
-                      onChange={(e) => setMem2Mail(e.target.value)}
-                    />
-                    <div className="head4">Phone Number</div>
-                    <input
-                      id="member2-number"
-                      type="tel"
-                      className="input"
-                      placeholder="Phone No."
-                      value={mem2Number}
-                      onChange={(e) => setMem2Number(e.target.value)}
-                    />
-                    <div className="head4">Age</div>
-                    <input
-                      id="member2-age"
-                      type="number"
-                      className="input"
-                      placeholder="Age"
-                      value={mem2Age}
-                      onChange={(e) => setMem2Age(e.target.value)}
-                    />
-                    <div className="head4">Current Address</div>
-                    <input
-                      id="member2-address"
-                      type="text"
-                      className="input"
-                      placeholder="Address"
-                      value={mem2Location}
-                      onChange={(e) => setMem2Location(e.target.value)}
-                    />
-                    <div className="head4">Current Institution</div>
-                    <input
-                      id="member2-institute"
-                      type="text"
-                      className="input"
-                      placeholder="Institution"
-                      value={mem2Institute}
-                      onChange={(e) => setMem2Institute(e.target.value)}
-                    />
-                    <div className="head4">Current Course</div>
-                    <input
-                      id="member2-course"
-                      type="text"
-                      className="input"
-                      placeholder="Course"
-                      value={mem2Course}
-                      onChange={(e) => setMem2Course(e.target.value)}
-                    />
-                    <div className="head4">Current Studying Year</div>
-                    <div className="Dropdown">
-                      <div
-                        className={`dropdown-header ${
-                          dropdownOpen2 ? "open" : ""
-                        }`}
-                        onClick={() => setDropdownOpen2(!dropdownOpen2)}
-                      >
-                        {mem2CurrentYear ? mem2CurrentYear : "Select an Event"}
-                        <div className="custom-down-icon">
-                          <FaChevronDown />
-                        </div>
-                      </div>
-                      {dropdownOpen2 && (
-                        <div className="options">
-                          {options1.map((option) => (
-                            <div
-                              key={option}
-                              className="option"
-                              onChange={() => handleOptionClick2(option)}
-                              onClick={() => handleOptionClick2(option)}
-                              value={mem2CurrentYear}
-                            >
-                              {option}
-                            </div>
-                          ))}
-                        </div>
+              {eventName == "Tech Event" ? (
+                <>
+                  <div className="membox">
+                    <div className="head3" onClick={toggleSecond}>
+                      Second Member{" "}
+                      {secondMember ? (
+                        <FaChevronDown fontSize={"1.5rem"} />
+                      ) : (
+                        <FaChevronUp fontSize={"1.5rem"} />
                       )}
                     </div>
-                    <div className="head4">Interested in</div>
-                    <div className="checkbox">
-                      <input
-                        id="id24"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Internship"
-                        onChange={handleMem2Interest}
-                      />
-                      <label htmlFor="id24" className="checkbox-label">
-                        Internship
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id25"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Freelance"
-                        onChange={handleMem2Interest}
-                      />
-                      <label htmlFor="id25" className="checkbox-label">
-                        Freelance
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id26"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Startup"
-                        onChange={handleMem2Interest}
-                      />
-                      <label htmlFor="id26" className="checkbox-label">
-                        Startup
-                      </label>
-                    </div>
-                    <div className="head4">Prior work experience as</div>
-                    <div className="checkbox">
-                      <input
-                        id="id27"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Intern"
-                        onChange={handleMem2PriorWork}
-                      />
-                      <label htmlFor="id27" className="checkbox-label">
-                        Intern
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id28"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Freelancer"
-                        onChange={handleMem2PriorWork}
-                      />
-                      <label htmlFor="id28" className="checkbox-label">
-                        Freelancer
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id29"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Founder/Co-founder"
-                        onChange={handleMem2PriorWork}
-                      />
-                      <label htmlFor="id29" className="checkbox-label">
-                        Founder/Co-founder
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id30"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Full-time"
-                        onChange={handleMem2PriorWork}
-                      />
-                      <label htmlFor="id30" className="checkbox-label">
-                        Full-time
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id31"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="None"
-                        onChange={handleMem2PriorWork}
-                      />
-                      <label htmlFor="id31" className="checkbox-label">
-                        None
-                      </label>
-                    </div>
-                    <div className="head4">Currently working as</div>
-                    <div className="checkbox">
-                      <input
-                        id="id32"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Full-time"
-                        onChange={handleMem2CurrentWork}
-                      />
-                      <label htmlFor="id32" className="checkbox-label">
-                        Full-time
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id33"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Part-time"
-                        onChange={handleMem2CurrentWork}
-                      />
-                      <label htmlFor="id33" className="checkbox-label">
-                        Part-time
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id34"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Freelance"
-                        onChange={handleMem2CurrentWork}
-                      />
-                      <label htmlFor="id34" className="checkbox-label">
-                        Freelance
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id35"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Intern"
-                        onChange={handleMem2CurrentWork}
-                      />
-                      <label htmlFor="id35" className="checkbox-label">
-                        Intern
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id36"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="None"
-                        onChange={handleMem2CurrentWork}
-                      />
-                      <label htmlFor="id36" className="checkbox-label">
-                        None
-                      </label>
-                    </div>
-                    <div className="head4">Internship you're looking for</div>
-                    <div className="checkbox">
-                      <input
-                        id="id37"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Web Development"
-                        onChange={handleMem2Category}
-                      />
-                      <label htmlFor="id37" className="checkbox-label">
-                        Web Development
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id38"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="App Development"
-                        onChange={handleMem2Category}
-                      />
-                      <label htmlFor="id38" className="checkbox-label">
-                        App Development
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id39"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="AI/ML"
-                        onChange={handleMem2Category}
-                      />
-                      <label htmlFor="id39" className="checkbox-label">
-                        AI/ML
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id40"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Data Analyst"
-                        onChange={handleMem2Category}
-                      />
-                      <label htmlFor="id40" className="checkbox-label">
-                        Data Analyst
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id41"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Graphic Designer"
-                        onChange={handleMem2Category}
-                      />
-                      <label htmlFor="id41" className="checkbox-label">
-                        Graphic Designer
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id42"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Content Writer"
-                        onChange={handleMem2Category}
-                      />
-                      <label htmlFor="id42" className="checkbox-label">
-                        Content Writer
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id43"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Business Analyst"
-                        onChange={handleMem2Category}
-                      />
-                      <label htmlFor="id43" className="checkbox-label">
-                        Business Analyst
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id44"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Marketing"
-                        onChange={handleMem2Category}
-                      />
-                      <label htmlFor="id44" className="checkbox-label">
-                        Marketing
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id45"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="HR"
-                        onChange={handleMem2Category}
-                      />
-                      <label htmlFor="id45" className="checkbox-label">
-                        HR
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id46"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Digital Marketing/Social Media manager"
-                        onChange={handleMem2Category}
-                      />
-                      <label htmlFor="id46" className="checkbox-label">
-                        Digital Marketing/Social Media manager
-                      </label>
-                    </div>
-                  </>
-                )}
-              </div>
-              <div className="membox">
-                <div className="head3" onClick={toggleThird}>
-                  Third Member{" "}
-                  {thirdMember ? (
-                    <FaChevronDown fontSize={"1.5rem"} />
-                  ) : (
-                    <FaChevronUp fontSize={"1.5rem"} />
-                  )}
-                </div>
-                {!thirdMember && (
-                  <>
-                    <div className="head4">Name</div>
-                    <input
-                      type="text"
-                      className="input"
-                      placeholder="Name"
-                      id="member3-name"
-                      value={mem3Name}
-                      onChange={(e) => setMem3Name(e.target.value)}
-                    />
-                    <div className="head4">Email</div>
-                    <input
-                      id="member3-mail"
-                      type="email"
-                      className="input"
-                      placeholder="Email"
-                      value={mem3Mail}
-                      onChange={(e) => setMem3Mail(e.target.value)}
-                    />
-                    <div className="head4">Phone Number</div>
-                    <input
-                      id="member3-number"
-                      type="tel"
-                      className="input"
-                      placeholder="Phone No."
-                      value={mem3Number}
-                      onChange={(e) => setMem3Number(e.target.value)}
-                    />
-                    <div className="head4">Age</div>
-                    <input
-                      id="member3-age"
-                      type="number"
-                      className="input"
-                      placeholder="Age"
-                      value={mem3Age}
-                      onChange={(e) => setMem3Age(e.target.value)}
-                    />
-                    <div className="head4">Current Address</div>
-                    <input
-                      id="member3-address"
-                      type="text"
-                      className="input"
-                      placeholder="Address"
-                      value={mem3Location}
-                      onChange={(e) => setMem3Location(e.target.value)}
-                    />
-                    <div className="head4">Current Institution</div>
-                    <input
-                      id="member3-institute"
-                      type="text"
-                      className="input"
-                      placeholder="Institution"
-                      value={mem3Institute}
-                      onChange={(e) => setMem3Institute(e.target.value)}
-                    />
-                    <div className="head4">Current Course</div>
-                    <input
-                      id="member3-course"
-                      type="text"
-                      className="input"
-                      placeholder="Course"
-                      value={mem3Course}
-                      onChange={(e) => setMem3Course(e.target.value)}
-                    />
-                    <div className="head4">Current Studying Year</div>
-                    <div className="Dropdown">
-                      <div
-                        className={`dropdown-header ${
-                          dropdownOpen3 ? "open" : ""
-                        }`}
-                        onClick={() => setDropdownOpen3(!dropdownOpen3)}
-                      >
-                        {mem3CurrentYear ? mem3CurrentYear : "Select an Event"}
-                        <div className="custom-down-icon">
-                          <FaChevronDown />
-                        </div>
-                      </div>
-                      {dropdownOpen3 && (
-                        <div className="options">
-                          {options1.map((option) => (
-                            <div
-                              key={option}
-                              className="option"
-                              onChange={() => handleOptionClick3(option)}
-                              onClick={() => handleOptionClick3(option)}
-                              value={mem3CurrentYear}
-                            >
-                              {option}
+                    {!secondMember && (
+                      <>
+                        <div className="head4">Name</div>
+                        <input
+                          type="text"
+                          className="input"
+                          placeholder="Name"
+                          id="member2-name"
+                          value={mem2Name}
+                          onChange={(e) => setMem2Name(e.target.value)}
+                        />
+                        <div className="head4">Email</div>
+                        <input
+                          id="member2-mail"
+                          type="email"
+                          className="input"
+                          placeholder="Email"
+                          value={mem2Mail}
+                          onChange={(e) => setMem2Mail(e.target.value)}
+                        />
+                        <div className="head4">Phone Number</div>
+                        <input
+                          id="member2-number"
+                          type="tel"
+                          className="input"
+                          placeholder="Phone No."
+                          value={mem2Number}
+                          onChange={(e) => setMem2Number(e.target.value)}
+                        />
+                        <div className="head4">Age</div>
+                        <input
+                          id="member2-age"
+                          type="number"
+                          className="input"
+                          placeholder="Age"
+                          value={mem2Age}
+                          onChange={(e) => setMem2Age(e.target.value)}
+                        />
+                        <div className="head4">Current Address</div>
+                        <input
+                          id="member2-address"
+                          type="text"
+                          className="input"
+                          placeholder="Address"
+                          value={mem2Location}
+                          onChange={(e) => setMem2Location(e.target.value)}
+                        />
+                        <div className="head4">Current Institution</div>
+                        <input
+                          id="member2-institute"
+                          type="text"
+                          className="input"
+                          placeholder="Institution"
+                          value={mem2Institute}
+                          onChange={(e) => setMem2Institute(e.target.value)}
+                        />
+                        <div className="head4">Current Course</div>
+                        <input
+                          id="member2-course"
+                          type="text"
+                          className="input"
+                          placeholder="Course"
+                          value={mem2Course}
+                          onChange={(e) => setMem2Course(e.target.value)}
+                        />
+                        <div className="head4">Current Studying Year</div>
+                        <div className="Dropdown">
+                          <div
+                            className={`dropdown-header ${
+                              dropdownOpen2 ? "open" : ""
+                            }`}
+                            onClick={() => setDropdownOpen2(!dropdownOpen2)}
+                          >
+                            {mem2CurrentYear
+                              ? mem2CurrentYear
+                              : "Select an Event"}
+                            <div className="custom-down-icon">
+                              <FaChevronDown />
                             </div>
-                          ))}
+                          </div>
+                          {dropdownOpen2 && (
+                            <div className="options">
+                              {options1.map((option) => (
+                                <div
+                                  key={option}
+                                  className="option"
+                                  onChange={() => handleOptionClick2(option)}
+                                  onClick={() => handleOptionClick2(option)}
+                                  value={mem2CurrentYear}
+                                >
+                                  {option}
+                                </div>
+                              ))}
+                            </div>
+                          )}
                         </div>
+                        <div className="head4">Interested in</div>
+                        <div className="checkbox">
+                          <input
+                            id="id24"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Internship"
+                            onChange={handleMem2Interest}
+                          />
+                          <label htmlFor="id24" className="checkbox-label">
+                            Internship
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id25"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Freelance"
+                            onChange={handleMem2Interest}
+                          />
+                          <label htmlFor="id25" className="checkbox-label">
+                            Freelance
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id26"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Startup"
+                            onChange={handleMem2Interest}
+                          />
+                          <label htmlFor="id26" className="checkbox-label">
+                            Startup
+                          </label>
+                        </div>
+                        <div className="head4">Prior work experience as</div>
+                        <div className="checkbox">
+                          <input
+                            id="id27"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Intern"
+                            onChange={handleMem2PriorWork}
+                          />
+                          <label htmlFor="id27" className="checkbox-label">
+                            Intern
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id28"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Freelancer"
+                            onChange={handleMem2PriorWork}
+                          />
+                          <label htmlFor="id28" className="checkbox-label">
+                            Freelancer
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id29"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Founder/Co-founder"
+                            onChange={handleMem2PriorWork}
+                          />
+                          <label htmlFor="id29" className="checkbox-label">
+                            Founder/Co-founder
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id30"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Full-time"
+                            onChange={handleMem2PriorWork}
+                          />
+                          <label htmlFor="id30" className="checkbox-label">
+                            Full-time
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id31"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="None"
+                            onChange={handleMem2PriorWork}
+                          />
+                          <label htmlFor="id31" className="checkbox-label">
+                            None
+                          </label>
+                        </div>
+                        <div className="head4">Currently working as</div>
+                        <div className="checkbox">
+                          <input
+                            id="id32"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Full-time"
+                            onChange={handleMem2CurrentWork}
+                          />
+                          <label htmlFor="id32" className="checkbox-label">
+                            Full-time
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id33"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Part-time"
+                            onChange={handleMem2CurrentWork}
+                          />
+                          <label htmlFor="id33" className="checkbox-label">
+                            Part-time
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id34"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Freelance"
+                            onChange={handleMem2CurrentWork}
+                          />
+                          <label htmlFor="id34" className="checkbox-label">
+                            Freelance
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id35"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Intern"
+                            onChange={handleMem2CurrentWork}
+                          />
+                          <label htmlFor="id35" className="checkbox-label">
+                            Intern
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id36"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="None"
+                            onChange={handleMem2CurrentWork}
+                          />
+                          <label htmlFor="id36" className="checkbox-label">
+                            None
+                          </label>
+                        </div>
+                        <div className="head4">
+                          Internship you're looking for
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id37"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Web Development"
+                            onChange={handleMem2Category}
+                          />
+                          <label htmlFor="id37" className="checkbox-label">
+                            Web Development
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id38"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="App Development"
+                            onChange={handleMem2Category}
+                          />
+                          <label htmlFor="id38" className="checkbox-label">
+                            App Development
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id39"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="AI/ML"
+                            onChange={handleMem2Category}
+                          />
+                          <label htmlFor="id39" className="checkbox-label">
+                            AI/ML
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id40"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Data Analyst"
+                            onChange={handleMem2Category}
+                          />
+                          <label htmlFor="id40" className="checkbox-label">
+                            Data Analyst
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id41"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Graphic Designer"
+                            onChange={handleMem2Category}
+                          />
+                          <label htmlFor="id41" className="checkbox-label">
+                            Graphic Designer
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id42"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Content Writer"
+                            onChange={handleMem2Category}
+                          />
+                          <label htmlFor="id42" className="checkbox-label">
+                            Content Writer
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id43"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Business Analyst"
+                            onChange={handleMem2Category}
+                          />
+                          <label htmlFor="id43" className="checkbox-label">
+                            Business Analyst
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id44"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Marketing"
+                            onChange={handleMem2Category}
+                          />
+                          <label htmlFor="id44" className="checkbox-label">
+                            Marketing
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id45"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="HR"
+                            onChange={handleMem2Category}
+                          />
+                          <label htmlFor="id45" className="checkbox-label">
+                            HR
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id46"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Digital Marketing/Social Media manager"
+                            onChange={handleMem2Category}
+                          />
+                          <label htmlFor="id46" className="checkbox-label">
+                            Digital Marketing/Social Media manager
+                          </label>
+                        </div>
+                      </>
+                    )}
+                  </div>
+                  <div className="membox">
+                    <div className="head3" onClick={toggleThird}>
+                      Third Member{" "}
+                      {thirdMember ? (
+                        <FaChevronDown fontSize={"1.5rem"} />
+                      ) : (
+                        <FaChevronUp fontSize={"1.5rem"} />
                       )}
                     </div>
-                    <div className="head4">Interested in</div>
-                    <div className="checkbox">
-                      <input
-                        id="id47"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Internship"
-                        onChange={handleMem3Interest}
-                      />
-                      <label htmlFor="id47" className="checkbox-label">
-                        Internship
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id48"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Freelance"
-                        onChange={handleMem3Interest}
-                      />
-                      <label htmlFor="id48" className="checkbox-label">
-                        Freelance
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id49"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Startup"
-                        onChange={handleMem3Interest}
-                      />
-                      <label htmlFor="id49" className="checkbox-label">
-                        Startup
-                      </label>
-                    </div>
-                    <div className="head4">Prior work experience as</div>
-                    <div className="checkbox">
-                      <input
-                        id="id50"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Intern"
-                        onChange={handleMem3PriorWork}
-                      />
-                      <label htmlFor="id50" className="checkbox-label">
-                        Intern
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id51"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Freelancer"
-                        onChange={handleMem3PriorWork}
-                      />
-                      <label htmlFor="id51" className="checkbox-label">
-                        Freelancer
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id52"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Founder/Co-founder"
-                        onChange={handleMem3PriorWork}
-                      />
-                      <label htmlFor="id52" className="checkbox-label">
-                        Founder/Co-founder
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id53"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Full-time"
-                        onChange={handleMem3PriorWork}
-                      />
-                      <label htmlFor="id53" className="checkbox-label">
-                        Full-time
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id54"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="None"
-                        onChange={handleMem3PriorWork}
-                      />
-                      <label htmlFor="id54" className="checkbox-label">
-                        None
-                      </label>
-                    </div>
-                    <div className="head4">Currently working as</div>
-                    <div className="checkbox">
-                      <input
-                        id="id55"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Full-time"
-                        onChange={handleMem3CurrentWork}
-                      />
-                      <label htmlFor="id55" className="checkbox-label">
-                        Full-time
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id56"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Part-time"
-                        onChange={handleMem3CurrentWork}
-                      />
-                      <label htmlFor="id56" className="checkbox-label">
-                        Part-time
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id57"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Freelance"
-                        onChange={handleMem3CurrentWork}
-                      />
-                      <label htmlFor="id57" className="checkbox-label">
-                        Freelance
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id58"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Intern"
-                        onChange={handleMem3CurrentWork}
-                      />
-                      <label htmlFor="id58" className="checkbox-label">
-                        Intern
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id59"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="None"
-                        onChange={handleMem3CurrentWork}
-                      />
-                      <label htmlFor="id59" className="checkbox-label">
-                        None
-                      </label>
-                    </div>
-                    <div className="head4">Internship you're looking for</div>
-                    <div className="checkbox">
-                      <input
-                        id="id60"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Web Development"
-                        onChange={handleMem3Category}
-                      />
-                      <label htmlFor="id60" className="checkbox-label">
-                        Web Development
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id61"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="App Development"
-                        onChange={handleMem3Category}
-                      />
-                      <label htmlFor="id61" className="checkbox-label">
-                        App Development
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id62"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="AI/ML"
-                        onChange={handleMem3Category}
-                      />
-                      <label htmlFor="id62" className="checkbox-label">
-                        AI/ML
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id63"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Data Analyst"
-                        onChange={handleMem3Category}
-                      />
-                      <label htmlFor="id63" className="checkbox-label">
-                        Data Analyst
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id64"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Graphic Designer"
-                        onChange={handleMem3Category}
-                      />
-                      <label htmlFor="id64" className="checkbox-label">
-                        Graphic Designer
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id65"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Content Writer"
-                        onChange={handleMem3Category}
-                      />
-                      <label htmlFor="id65" className="checkbox-label">
-                        Content Writer
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id66"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Business Analyst"
-                        onChange={handleMem3Category}
-                      />
-                      <label htmlFor="id66" className="checkbox-label">
-                        Business Analyst
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id67"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Marketing"
-                        onChange={handleMem3Category}
-                      />
-                      <label htmlFor="id67" className="checkbox-label">
-                        Marketing
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id68"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="HR"
-                        onChange={handleMem3Category}
-                      />
-                      <label htmlFor="id68" className="checkbox-label">
-                        HR
-                      </label>
-                    </div>
-                    <div className="checkbox">
-                      <input
-                        id="id69"
-                        type="checkbox"
-                        style={{ cursor: "pointer" }}
-                        name="Digital Marketing/Social Media manager"
-                        onChange={handleMem3Category}
-                      />
-                      <label htmlFor="id69" className="checkbox-label">
-                        Digital Marketing/Social Media manager
-                      </label>
-                    </div>
-                  </>
-                )}
-              </div>
+                    {!thirdMember && (
+                      <>
+                        <div className="head4">Name</div>
+                        <input
+                          type="text"
+                          className="input"
+                          placeholder="Name"
+                          id="member3-name"
+                          value={mem3Name}
+                          onChange={(e) => setMem3Name(e.target.value)}
+                        />
+                        <div className="head4">Email</div>
+                        <input
+                          id="member3-mail"
+                          type="email"
+                          className="input"
+                          placeholder="Email"
+                          value={mem3Mail}
+                          onChange={(e) => setMem3Mail(e.target.value)}
+                        />
+                        <div className="head4">Phone Number</div>
+                        <input
+                          id="member3-number"
+                          type="tel"
+                          className="input"
+                          placeholder="Phone No."
+                          value={mem3Number}
+                          onChange={(e) => setMem3Number(e.target.value)}
+                        />
+                        <div className="head4">Age</div>
+                        <input
+                          id="member3-age"
+                          type="number"
+                          className="input"
+                          placeholder="Age"
+                          value={mem3Age}
+                          onChange={(e) => setMem3Age(e.target.value)}
+                        />
+                        <div className="head4">Current Address</div>
+                        <input
+                          id="member3-address"
+                          type="text"
+                          className="input"
+                          placeholder="Address"
+                          value={mem3Location}
+                          onChange={(e) => setMem3Location(e.target.value)}
+                        />
+                        <div className="head4">Current Institution</div>
+                        <input
+                          id="member3-institute"
+                          type="text"
+                          className="input"
+                          placeholder="Institution"
+                          value={mem3Institute}
+                          onChange={(e) => setMem3Institute(e.target.value)}
+                        />
+                        <div className="head4">Current Course</div>
+                        <input
+                          id="member3-course"
+                          type="text"
+                          className="input"
+                          placeholder="Course"
+                          value={mem3Course}
+                          onChange={(e) => setMem3Course(e.target.value)}
+                        />
+                        <div className="head4">Current Studying Year</div>
+                        <div className="Dropdown">
+                          <div
+                            className={`dropdown-header ${
+                              dropdownOpen3 ? "open" : ""
+                            }`}
+                            onClick={() => setDropdownOpen3(!dropdownOpen3)}
+                          >
+                            {mem3CurrentYear
+                              ? mem3CurrentYear
+                              : "Select an Event"}
+                            <div className="custom-down-icon">
+                              <FaChevronDown />
+                            </div>
+                          </div>
+                          {dropdownOpen3 && (
+                            <div className="options">
+                              {options1.map((option) => (
+                                <div
+                                  key={option}
+                                  className="option"
+                                  onChange={() => handleOptionClick3(option)}
+                                  onClick={() => handleOptionClick3(option)}
+                                  value={mem3CurrentYear}
+                                >
+                                  {option}
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                        <div className="head4">Interested in</div>
+                        <div className="checkbox">
+                          <input
+                            id="id47"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Internship"
+                            onChange={handleMem3Interest}
+                          />
+                          <label htmlFor="id47" className="checkbox-label">
+                            Internship
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id48"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Freelance"
+                            onChange={handleMem3Interest}
+                          />
+                          <label htmlFor="id48" className="checkbox-label">
+                            Freelance
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id49"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Startup"
+                            onChange={handleMem3Interest}
+                          />
+                          <label htmlFor="id49" className="checkbox-label">
+                            Startup
+                          </label>
+                        </div>
+                        <div className="head4">Prior work experience as</div>
+                        <div className="checkbox">
+                          <input
+                            id="id50"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Intern"
+                            onChange={handleMem3PriorWork}
+                          />
+                          <label htmlFor="id50" className="checkbox-label">
+                            Intern
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id51"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Freelancer"
+                            onChange={handleMem3PriorWork}
+                          />
+                          <label htmlFor="id51" className="checkbox-label">
+                            Freelancer
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id52"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Founder/Co-founder"
+                            onChange={handleMem3PriorWork}
+                          />
+                          <label htmlFor="id52" className="checkbox-label">
+                            Founder/Co-founder
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id53"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Full-time"
+                            onChange={handleMem3PriorWork}
+                          />
+                          <label htmlFor="id53" className="checkbox-label">
+                            Full-time
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id54"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="None"
+                            onChange={handleMem3PriorWork}
+                          />
+                          <label htmlFor="id54" className="checkbox-label">
+                            None
+                          </label>
+                        </div>
+                        <div className="head4">Currently working as</div>
+                        <div className="checkbox">
+                          <input
+                            id="id55"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Full-time"
+                            onChange={handleMem3CurrentWork}
+                          />
+                          <label htmlFor="id55" className="checkbox-label">
+                            Full-time
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id56"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Part-time"
+                            onChange={handleMem3CurrentWork}
+                          />
+                          <label htmlFor="id56" className="checkbox-label">
+                            Part-time
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id57"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Freelance"
+                            onChange={handleMem3CurrentWork}
+                          />
+                          <label htmlFor="id57" className="checkbox-label">
+                            Freelance
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id58"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Intern"
+                            onChange={handleMem3CurrentWork}
+                          />
+                          <label htmlFor="id58" className="checkbox-label">
+                            Intern
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id59"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="None"
+                            onChange={handleMem3CurrentWork}
+                          />
+                          <label htmlFor="id59" className="checkbox-label">
+                            None
+                          </label>
+                        </div>
+                        <div className="head4">
+                          Internship you're looking for
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id60"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Web Development"
+                            onChange={handleMem3Category}
+                          />
+                          <label htmlFor="id60" className="checkbox-label">
+                            Web Development
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id61"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="App Development"
+                            onChange={handleMem3Category}
+                          />
+                          <label htmlFor="id61" className="checkbox-label">
+                            App Development
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id62"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="AI/ML"
+                            onChange={handleMem3Category}
+                          />
+                          <label htmlFor="id62" className="checkbox-label">
+                            AI/ML
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id63"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Data Analyst"
+                            onChange={handleMem3Category}
+                          />
+                          <label htmlFor="id63" className="checkbox-label">
+                            Data Analyst
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id64"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Graphic Designer"
+                            onChange={handleMem3Category}
+                          />
+                          <label htmlFor="id64" className="checkbox-label">
+                            Graphic Designer
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id65"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Content Writer"
+                            onChange={handleMem3Category}
+                          />
+                          <label htmlFor="id65" className="checkbox-label">
+                            Content Writer
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id66"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Business Analyst"
+                            onChange={handleMem3Category}
+                          />
+                          <label htmlFor="id66" className="checkbox-label">
+                            Business Analyst
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id67"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Marketing"
+                            onChange={handleMem3Category}
+                          />
+                          <label htmlFor="id67" className="checkbox-label">
+                            Marketing
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id68"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="HR"
+                            onChange={handleMem3Category}
+                          />
+                          <label htmlFor="id68" className="checkbox-label">
+                            HR
+                          </label>
+                        </div>
+                        <div className="checkbox">
+                          <input
+                            id="id69"
+                            type="checkbox"
+                            style={{ cursor: "pointer" }}
+                            name="Digital Marketing/Social Media manager"
+                            onChange={handleMem3Category}
+                          />
+                          <label htmlFor="id69" className="checkbox-label">
+                            Digital Marketing/Social Media manager
+                          </label>
+                        </div>
+                      </>
+                    )}
+                  </div>
+                </>
+              ) : (
+                ""
+              )}
               {/* <div className="membox">
                 <div className="head3" onClick={toggleFourth}>
                   Fourth Member{" "}
