@@ -1,11 +1,12 @@
 import React from "react";
+import Confetti from "react-confetti";
 import { Link } from "react-router-dom";
 
 const Links = () => {
   return (
     <div className="box">
+      <Confetti recycle={false} />
       <div className="head">Registration Successful.</div>
-
       <div className="head1">
         The further notification will be shared in the groups. Do join!!!
       </div>
