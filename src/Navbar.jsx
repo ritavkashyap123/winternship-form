@@ -22,10 +22,10 @@ const Navbar = () => {
         Events
       </Link>
       <Link className={`a ${location.pathname === "/student-form" ? "active" : ""}`} to="/student-form" onClick={closeMenu}>
-        Student Register
+        Student Registration
       </Link>
       <Link className={`a ${location.pathname === "/company-form" ? "active" : ""}`} to="/company-form" onClick={closeMenu}>
-        Company Register
+        Company Registration
       </Link>
       <Link className="a icon" onClick={handleToggle}>
         <FaBars />
