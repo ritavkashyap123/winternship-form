@@ -207,7 +207,6 @@ const Participants = () => {
                         <TableCell align="left">{row.mem3Mail}</TableCell>
                         <TableCell align="left">{row.mem3Number}</TableCell>
                         <TableCell align="left">{row.mem3Age}</TableCell>
-                        <TableCell align="left">{row.teamName}</TableCell>
                         <TableCell align="left">{row.mem3Location}</TableCell>
                         <TableCell align="left">{row.mem3Institute}</TableCell>
                         <TableCell align="left">{row.mem3Course}</TableCell>
