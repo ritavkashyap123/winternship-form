@@ -321,6 +321,8 @@ const Participants = () => {
                           {row.leadPriorWork[2]}
                           {row.leadPriorWork[3] ? <br /> : ""}
                           {row.leadPriorWork[3]}
+                          {row.leadPriorWork[4] ? <br /> : ""}
+                          {row.leadPriorWork[4]}
                         </TableCell>
                         <TableCell align="left">
                           {row.leadCurrentWork[0]}
@@ -330,6 +332,8 @@ const Participants = () => {
                           {row.leadCurrentWork[2]}
                           {row.leadCurrentWork[3] ? <br /> : ""}
                           {row.leadCurrentWork[3]}
+                          {row.leadCurrentWork[4] ? <br /> : ""}
+                          {row.leadCurrentWork[4]}
                         </TableCell>
                         <TableCell align="left">
                           {row.leadCategory[0]}
