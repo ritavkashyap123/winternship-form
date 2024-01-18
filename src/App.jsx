@@ -8,6 +8,7 @@ import Navbar from "./Navbar";
 import "./App.css";
 import Header from "./Header";
 import Links from "./Links";
+import Participants from "./Participants";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/student-form" element={<StudentForm />} />
         <Route path="/company-form" element={<CompanyForm />} />
         <Route path="/links" element={<Links />} />
+        <Route path="/participant-list" element={<Participants />} />
       </Routes>
     </BrowserRouter>
   );
