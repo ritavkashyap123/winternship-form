@@ -8,8 +8,6 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
-import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
 import { db } from "./firebaseUtils";
 import { collection, getDocs } from "firebase/firestore";
 
@@ -53,6 +51,12 @@ const Participants = () => {
             <Table stickyHeader aria-label="sticky table">
               <TableHead>
                 <TableRow>
+                  <TableCell
+                    align="left"
+                    style={{ minWidth: "50px", fontWeight: "bold" }}
+                  >
+                    S No.
+                  </TableCell>
                   <TableCell
                     align="left"
                     style={{ minWidth: "100px", fontWeight: "bold" }}
@@ -286,7 +290,7 @@ const Participants = () => {
               <TableBody>
                 {rows
                   .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-                  .map((row) => {
+                  .map((row, index) => {
                     return (
                       <TableRow
                         hover
@@ -294,6 +298,9 @@ const Participants = () => {
                         tabIndex={-1}
                         key={row.code}
                       >
+                        <TableCell align="left">
+                          {page * rowsPerPage + index + 1}
+                        </TableCell>
                         <TableCell align="left">{row.teamName}</TableCell>
                         <TableCell align="left">{row.eventName}</TableCell>
                         <TableCell align="left">{row.leadName}</TableCell>
