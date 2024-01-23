@@ -276,8 +276,7 @@ button:hover {
 
 .filemain {
   display: flex;
-  width: 100%;
-  overflow: hidden;
+  width: 90%;
 }
 
 .inputfile-box {
@@ -285,6 +284,7 @@ button:hover {
   width: 70%;
   margin: 0.5rem 1rem;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .inputfile {
