@@ -327,8 +327,7 @@ button:hover {
 }
 
 .file-button {
-  box-shadow: inset .2rem .2rem .5rem #c8d0e7,
-    inset -.2rem -.2rem .5rem #b3dfff;
+  background-color: #a4d9ff;
   cursor: pointer;
   position: absolute;
   border: 1px solid;
