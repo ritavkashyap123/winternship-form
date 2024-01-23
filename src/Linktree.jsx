@@ -58,10 +58,10 @@ const Linktree = () => {
           </div>
         </div>
       </Link>
-      <Link to="/company-form">
+      <Link to="/submission">
         <div className="box">
           <div className="head1">
-            Company Registration Form <BsBoxArrowUpRight />
+            Submission Form <BsBoxArrowUpRight />
           </div>
         </div>
       </Link>

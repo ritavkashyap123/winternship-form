@@ -9,6 +9,8 @@ import "./App.css";
 import Header from "./Header";
 import Links from "./Links";
 import Participants from "./Participants";
+import StudentSubmission from "./StudentSubmission";
+import Submitted from "./Submitted";
 
 const App = () => {
   return (
@@ -22,6 +24,8 @@ const App = () => {
         <Route path="/company-form" element={<CompanyForm />} />
         <Route path="/links" element={<Links />} />
         <Route path="/participant-list" element={<Participants />} />
+        <Route path="/submission" element={<StudentSubmission />} />
+        <Route path="/submitted" element={<Submitted />} />
       </Routes>
     </BrowserRouter>
   );
