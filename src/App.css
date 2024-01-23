@@ -173,18 +173,16 @@ button {
 }
 
 button:hover {
+  background-color: #b3ffb3;
   transition: 0.3s;
 }
+
 .button {
   border: 1px solid black;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
   background-color: transparent;
-  transition: 0.3s;
-}
-
-.button:hover {
   transition: 0.3s;
 }
 
@@ -278,6 +276,7 @@ button:hover {
 
 .filemain {
   display: flex;
+  width: 90%;
 }
 
 .inputfile-box {
