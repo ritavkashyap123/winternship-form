@@ -48,7 +48,7 @@ const Participants = () => {
           }}
         >
           <TableContainer>
-            <Table stickyHeader aria-label="sticky table" exportButton={true}>
+            <Table stickyHeader aria-label="sticky table">
               <TableHead>
                 <TableRow>
                   <TableCell
