@@ -268,7 +268,6 @@ const Participant = () => {
         disableRowSelectionOnClick
         slots={{ toolbar: GridToolbar }}
       />
-      {console.log(rows)}
     </div>
   );
 };
