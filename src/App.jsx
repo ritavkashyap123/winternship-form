@@ -12,6 +12,7 @@ import Participants from "./Participants";
 import StudentSubmission from "./StudentSubmission";
 import Submitted from "./Submitted";
 import Participant from "./Participant";
+import SubmissionList from "./SubmissionList";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/links" element={<Links />} />
         {/* <Route path="/participant-list" element={<Participants />} /> */}
         <Route path="/participant-list" element={<Participant />} />
+        <Route path="/submission-list" element={<SubmissionList />} />
         <Route path="/submission" element={<StudentSubmission />} />
         <Route path="/submitted" element={<Submitted />} />
       </Routes>
