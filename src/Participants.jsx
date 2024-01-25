@@ -35,6 +35,7 @@ const Participants = () => {
     setPage(0);
   };
 
+
   return (
     <>
       {rows.length > 0 && (
@@ -296,7 +297,7 @@ const Participants = () => {
                         hover
                         role="checkbox"
                         tabIndex={-1}
-                        key={row.code}
+                        key={row.id}
                       >
                         <TableCell align="left">
                           {page * rowsPerPage + index + 1}
